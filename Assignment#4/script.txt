@@ -1,0 +1,65 @@
+Script started on Mon 14 Nov 2016 03:55:26 PM EST
+]0;benkun.chen@csa1:~/Desktop/cpsc355/Assignment#4[benkun.chen@csa1 Assignment#4]$ lscd Assignment#4[5Pcpsc355Desktop[3PDesktop./assign4gcc assign4.s -o assign4[15P./assign4[2PDesktop./assign4gcc assign4.s -o assign4[15P./assign4gcc assign4.s -o assign4[15P./assign4gcc assign4.s -o assign4[15P./assign4gcc assign4.s -o assign4[K[14P./assign4gcc assign4.s -o assign4 -ggdb
+]0;benkun.chen@csa1:~/Desktop/cpsc355/Assignment#4[benkun.chen@csa1 Assignment#4]$ gdb assignm[K4
+GNU gdb (GDB) Fedora 7.11.1-86.fc24
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign4...done.
+(gdb) display [K/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b 32[K3
+Breakpoint 1 at 0x400638: file assign4.s, line 33.
+(gdb) b 62
+Breakpoint 2 at 0x4006a0: file assign4.s, line 62.
+(gdb) r
+Starting program: /home/ugb/benkun.chen/Desktop/cpsc355/Assignment#4/assign4 
+
+Breakpoint 1, main () at assign4.s:33
+33	             adrp       x0, fmt_init                        //set the 1st argument of printf(fmt_1, var1, var2) (high-order bits)
+1: x/i $pc
+=> 0x400638 <main+24>:	adrp	x0, 0x400000
+(gdb) x/8d $fp+16
+0x3fffffff3b0:	0	0	0	1
+0x3fffffff3c0:	0	0	0	1
+(gdb) clear 33
+Deleted breakpoint 1 
+(gdb) c
+Continuing.
+
+Initial sphere values:
+Sphere first origin = (0, 0, 0)  radius = 1
+Sphere second origin = (0, 0, 0)  radius = 1
+
+Breakpoint 2, false () at assign4.s:63
+63	             add        x0, x0, :lo12:fmt_final             //set the 1st argument of printf(fmt_1, var1, var2) (lower 12 bits)
+1: x/i $pc
+=> 0x4006a0 <false+4>:	add	x0, x0, #0x5f7
+(gdb) x/i $pc[K[K[K[K[K8d $fp+16
+0x3fffffff3b0:	-5	3	2	1
+0x3fffffff3c0:	0	0	0	8
+(gdb) d[Kclear 62
+Deleted breakpoint 2 
+(gdb) c
+Continuing.
+
+Changed sphere values:
+Sphere first origin = (-5, 3, 2)  radius = 1
+Sphere second origin = (0, 0, 0)  radius = 8
+[Inferior 1 (process 31979) exited normally]
+(gdb) q
+]0;benkun.chen@csa1:~/Desktop/cpsc355/Assignment#4[benkun.chen@csa1 Assignment#4]$ exit
+exit
+
+Script done on Mon 14 Nov 2016 03:58:16 PM EST

@@ -1,0 +1,301 @@
+Script started on Fri 28 Oct 2016 03:23:11 PM MDT
+qwe]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#3[benkun.chen@csa2 Assignment#3]$ qwe[K[K[Kqwe[K[K[Kqwe[K[K[Kexitgdb assign3[13@cc assign3.s -o[C[C[C[C[C[C[C[Cm4 assign3.m4 > assign3.s[11Pvim assign3.m4ls[Kvim assign3.m4m4 assign3.m4 > assign3.s
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#3[benkun.chen@csa2 Assignment#3]$ m4 assign3.m4 > assign3.sexit[Kgdb assign3[13@cc assign3.s -o[C[C[C[C[C[C[C[Cm4 assign3.m4 > assign3.s[11Pvim assign3.m4ls[Kcd Assignment#3[5Pcpsc355Assignment#3ls[Kvim assign3.m4m4 assign3.m4 > assign3.s[1Pgcc assign3.s -o assign3[13Pdb[C[C[C[C[C[C[C[C[13@cc assign3.s -o[C[C[C[C[C[C[C[C
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#3[benkun.chen@csa2 Assignment#3]$ gcc assign3.s -o assign3m4 assign3.m4 > assign3.sexit[Kgdb assign3[13@cc assign3.s -o[C[C[C[C[C[C[C[Cm4 assign3.m4 > assign3.s[1Pgcc assign3.s -o assign3[13Pdb[C[C[C[C[C[C[C[C[7Pexitgdb assign3
+GNU gdb (GDB) Fedora 7.11.1-86.fc24
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign3...(no debugging symbols found)...done.
+(gdb) displuy [K[K[Kay we[K[K/[K[K/t we[K[K[K[Ku [K[Ki $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b continue [K
+Breakpoint 1 at 0x400674
+(gdb) b exit
+Function "exit" not defined.
+Make breakpoint pending on future shared library load? (y or [n]) n
+(gdb) b exit[K[K[K[Kdone
+Breakpoint 2 at 0x40070c
+(gdb) r
+Starting program: /home/ugb/benkun.chen/Desktop/cpsc355/Assignment#3/assign3 
+v[0]: 103
+v[1]: 198
+v[2]: 105
+v[3]: 115
+v[4]: 81
+v[5]: 255
+v[6]: 74
+v[7]: 236
+v[8]: 41
+v[9]: 205
+v[10]: 186
+v[11]: 171
+v[12]: 242
+v[13]: 251
+v[14]: 227
+v[15]: 70
+v[16]: 124
+v[17]: 194
+v[18]: 84
+v[19]: 248
+v[20]: 27
+v[21]: 232
+v[22]: 231
+v[23]: 141
+v[24]: 118
+v[25]: 90
+v[26]: 46
+v[27]: 99
+v[28]: 51
+v[29]: 159
+v[30]: 201
+v[31]: 154
+v[32]: 102
+v[33]: 50
+v[34]: 13
+v[35]: 183
+v[36]: 49
+v[37]: 88
+v[38]: 163
+v[39]: 90
+
+Breakpoint 1, 0x0000000000400674 in continue ()
+1: x/i $pc
+=> 0x400674 <continue+4>:	str	w19, [x29,#176]
+(gdb) rb doneexitcontinue
+[C[C[C[C[C[Cdisplay/i $pc
+[C[C[C[C[C[C[3Pb continue[K[K[K[K[K[K[K[K[K[Kx/d $fp [K+16
+0x3fffffff200:	103
+(gdb) x/d $fp+16[K[K20
+0x3fffffff204:	198
+(gdb) x/d $fp+20[K4
+0x3fffffff208:	105
+(gdb) x/d $fp+24[K8
+0x3fffffff20c:	115
+(gdb) x/d $fp+28[K[K32
+0x3fffffff210:	81
+(gdb) x/d $fp+32[K6
+0x3fffffff214:	255
+(gdb) x/d $fp+36[K[K40
+0x3fffffff218:	74
+(gdb) x/d $fp+40[K4
+0x3fffffff21c:	236
+(gdb) x/d $fp+44[K8
+0x3fffffff220:	41
+(gdb) x/d $fp+48[K[K52
+0x3fffffff224:	205
+(gdb) x/d $fp+52[K4
+0x3fffffff228:	186
+(gdb) x/d $fp+56[K[K60
+0x3fffffff22c:	171
+(gdb) x/d $fp+60[K4
+0x3fffffff230:	242
+(gdb) x/d $fp+64[K8
+0x3fffffff234:	251
+(gdb) x/d $fp+68[K[K70
+0x3fffffff238:	227
+(gdb) x/d $fp+72[K6
+0x3fffffff23c:	70
+(gdb) x/d $fp+76[K[K80
+0x3fffffff240:	124
+(gdb) x/d $fp+80[K4
+0x3fffffff244:	194
+(gdb) x/d $fp+84[K8
+0x3fffffff248:	84
+(gdb) x/d $fp+88[K[K92
+0x3fffffff24c:	248
+(gdb) x/d $fp+92[K[K96
+0x3fffffff250:	27
+(gdb) x/d $fp+96[K[K100
+0x3fffffff254:	232
+(gdb) x/d $fp+100[K4
+0x3fffffff258:	231
+(gdb) x/d $fp+104[K8
+0x3fffffff25c:	141
+(gdb) x/d $fp+108[K[K12
+0x3fffffff260:	118
+(gdb) x/d $fp+112[K[K16
+0x3fffffff264:	90
+(gdb) x/d $fp+116[K[K20
+0x3fffffff268:	46
+(gdb) x/d $fp+1201620[K4
+0x3fffffff26c:	99
+(gdb) x/d $fp+124[K8
+0x3fffffff270:	51
+(gdb) x/d $fp+128[K[K32
+0x3fffffff274:	159
+(gdb) x/d $fp+132[K6
+0x3fffffff278:	201
+(gdb) x/d $fp+136[K[K40
+0x3fffffff27c:	154
+(gdb) x/d $fp+140[K4
+0x3fffffff280:	102
+(gdb) x/d $fp+144[K9[K8
+0x3fffffff284:	50
+(gdb) x/d $fp+148[K[K50[K2
+0x3fffffff288:	13
+(gdb) qwe[K[K[Kx/d $fp+152[K6
+0x3fffffff28c:	183
+(gdb) x/d $fp+156[K[K60
+0x3fffffff290:	49
+(gdb) x/d $fp+160[K4
+0x3fffffff294:	88
+(gdb) x/d $fp+164[K8
+0x3fffffff298:	163
+(gdb) x/d $fp+168[K[K72
+0x3fffffff29c:	90
+(gdb) x/d $fp+172[K6
+0x3fffffff2a0:	40
+(gdb) x/d $fp+176[K[K80
+0x3fffffff2a4:	0
+(gdb) c
+Continuing.
+
+Breakpoint 2, 0x000000000040070c in done ()
+1: x/i $pc
+=> 0x40070c <done+8>:	bl	0x4004b0 <printf@plt>
+(gdb) cx/d $fp+180[K[K[K16
+0x3fffffff200:	13
+(gdb) x/d $fp+16[K[K20
+0x3fffffff204:	27
+(gdb) x/d $fp+20[K4
+0x3fffffff208:	41
+(gdb) x/d $fp+24[K8
+0x3fffffff20c:	46
+(gdb) x/d $fp+28[K[K32
+0x3fffffff210:	49
+(gdb) x/d $fp+32[K[K34[K6
+0x3fffffff214:	50
+(gdb) x/d $fp+36[K[K40
+0x3fffffff218:	51
+(gdb) x/d $fp+40[K4
+0x3fffffff21c:	70
+(gdb) x/d $fp+44[K8
+0x3fffffff220:	74
+(gdb) x/d $fp+48[K[K52
+0x3fffffff224:	81
+(gdb) x/d $fp+52[K6
+0x3fffffff228:	84
+(gdb) x/d $fp+56[K[K60
+0x3fffffff22c:	88
+(gdb) x/d $fp+60[K4
+0x3fffffff230:	90
+(gdb) x/d $fp+64[K8
+0x3fffffff234:	90
+(gdb) x/d $fp+68[K[K72
+0x3fffffff238:	99
+(gdb) x/d $fp+72[K6
+0x3fffffff23c:	102
+(gdb) x/d $fp+76[K[K80
+0x3fffffff240:	103
+(gdb) x/d $fp+80[K[K84
+0x3fffffff244:	105
+(gdb) x/d $fp+84[K8
+0x3fffffff248:	115
+(gdb) x/d $fp+88[K[K82
+0x3fffffff24c:	118
+(gdb) x/d $fp+92[K6
+0x3fffffff250:	124
+(gdb) x/d $fp+96[K[K100
+0x3fffffff254:	141
+(gdb) x/d $fp+100[K4
+0x3fffffff258:	154
+(gdb) x/d $fp+104[K8
+0x3fffffff25c:	159
+(gdb) x/d $fp+108[K[K12
+0x3fffffff260:	163
+(gdb) x/d $fp+112[K[K16
+0x3fffffff264:	171
+(gdb) x/d $fp+116[K[K20
+0x3fffffff268:	183
+(gdb) x/d $fp+120[K4
+0x3fffffff26c:	186
+(gdb) x/d $fp+124[K8
+0x3fffffff270:	194
+(gdb) x/d $fp+128[K[K32
+0x3fffffff274:	198
+(gdb) x/d $fp+132[K[K36
+0x3fffffff278:	201
+(gdb) x/d $fp+136[K[K40
+0x3fffffff27c:	205
+(gdb) x/d $fp+140[K4
+0x3fffffff280:	227
+(gdb) x/d $fp+144[K8
+0x3fffffff284:	231
+(gdb) x/d $fp+148[K[K52
+0x3fffffff288:	232
+(gdb) x/d $fp+152[K[K58[K6
+0x3fffffff28c:	236
+(gdb) x/d $fp+156[K[K60
+0x3fffffff290:	242
+(gdb) x/d $fp+160[K4
+0x3fffffff294:	248
+(gdb) x/d $fp+164[K8
+0x3fffffff298:	251
+(gdb) x/d $fp+168[K[K6[K76[K2
+0x3fffffff29c:	255
+(gdb) x/d $fp+172[K6
+0x3fffffff2a0:	0
+(gdb) x/d $fp+176[K[K80
+0x3fffffff2a4:	40
+(gdb) c
+Continuing.
+
+Sorted array:
+v[0]: 13
+v[1]: 27
+v[2]: 41
+v[3]: 46
+v[4]: 49
+v[5]: 50
+v[6]: 51
+v[7]: 70
+v[8]: 74
+v[9]: 81
+v[10]: 84
+v[11]: 88
+v[12]: 90
+v[13]: 90
+v[14]: 99
+v[15]: 102
+v[16]: 103
+v[17]: 105
+v[18]: 115
+v[19]: 118
+v[20]: 124
+v[21]: 141
+v[22]: 154
+v[23]: 159
+v[24]: 163
+v[25]: 171
+v[26]: 183
+v[27]: 186
+v[28]: 194
+v[29]: 198
+v[30]: 201
+v[31]: 205
+v[32]: 227
+v[33]: 231
+v[34]: 232
+v[35]: 236
+v[36]: 242
+v[37]: 248
+v[38]: 251
+v[39]: 255
+[Inferior 1 (process 32504) exited normally]
+(gdb) q
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#3[benkun.chen@csa2 Assignment#3]$ exit
+exit
+
+Script done on Fri 28 Oct 2016 03:32:14 PM MDT

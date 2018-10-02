@@ -1,0 +1,203 @@
+Script started on Mon 03 Oct 2016 10:36:10 PM MDT
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#1[benkun.chen@csa2 Assignment#1]$ gcc assign [K1a [K.s [K[K[K[K[K[K[K[K[K[K[K[K[K[K[Kexitgdb assign1a[14@cc assign1a.s -o[C[C[C[C[C[C[C[C[C
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#1[benkun.chen@csa2 Assignment#1]$ gcc assign1a.s -o assign1aexit[Kgdb assign1a
+GNU gdb (GDB) Fedora 7.11.1-75.fc24
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign1a...(no debugging symbols found)...done.
+(gdb) display/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b main
+Breakpoint 1 at 0x40064c
+(gdb) r
+Starting program: /home/ugb/benkun.chen/Desktop/cpsc355/Assignment#1/assign1a 
+
+Breakpoint 1, 0x000000000040064c in main ()
+1: x/i $pc
+=> 0x40064c <main+8>:	mov	x19, #0xfffffffffffffff9    	// #-7
+(gdb) ni
+0x0000000000400650 in main ()
+1: x/i $pc
+=> 0x400650 <main+12>:	mov	x20, #0x0                   	// #0
+(gdb) p/d $x19
+$1 = -7
+(gdb) ni
+0x0000000000400654 in main ()
+1: x/i $pc
+=> 0x400654 <main+16>:	mov	x21, #0x0                   	// #0
+(gdb) ni
+0x0000000000400658 in main ()
+1: x/i $pc
+=> 0x400658 <main+20>:	mov	x22, #0x0                   	// #0
+(gdb) ni
+0x000000000040065c in main ()
+1: x/i $pc
+=> 0x40065c <main+24>:	mov	x23, #0x0                   	// #0
+(gdb) ni
+0x0000000000400660 in main ()
+1: x/i $pc
+=> 0x400660 <main+28>:	mov	x24, #0x64                  	// #100
+(gdb) ni
+0x0000000000400664 in test ()
+1: x/i $pc
+=> 0x400664 <test>:	cmp	x19, #0x6
+(gdb) ni
+0x0000000000400668 in test ()
+1: x/i $pc
+=> 0x400668 <test+4>:	b.ge	0x4006f8 <done>
+(gdb) ni
+0x000000000040066c in test ()
+1: x/i $pc
+=> 0x40066c <test+8>:	adrp	x0, 0x400000
+(gdb) ni
+0x0000000000400670 in test ()
+1: x/i $pc
+=> 0x400670 <test+12>:	add	x0, x0, #0x5b0
+(gdb) ni
+0x0000000000400674 in test ()
+1: x/i $pc
+=> 0x400674 <test+16>:	add	x1, x19, #0x1
+(gdb) ni
+0x0000000000400678 in test ()
+1: x/i $pc
+=> 0x400678 <test+20>:	add	x21, x19, #0x1
+(gdb) ni
+0x000000000040067c in test ()
+1: x/i $pc
+=> 0x40067c <test+24>:	bl	0x400460 <printf@plt>
+(gdb) ni
+0x0000000000400680 in test ()
+1: x/i $pc
+=> 0x400680 <test+28>:	adrp	x0, 0x400000
+(gdb) ni
+0x0000000000400684 in test ()
+1: x/i $pc
+=> 0x400684 <test+32>:	add	x0, x0, #0x5be
+(gdb) ni
+0x0000000000400688 in test ()
+1: x/i $pc
+=> 0x400688 <test+36>:	mul	x22, x21, x21
+(gdb) ni
+0x000000000040068c in test ()
+1: x/i $pc
+=> 0x40068c <test+40>:	mul	x22, x22, x21
+(gdb) ni
+0x0000000000400690 in test ()
+1: x/i $pc
+=> 0x400690 <test+44>:	mov	x20, #0x5                   	// #5
+(gdb) ni
+0x0000000000400694 in test ()
+1: x/i $pc
+=> 0x400694 <test+48>:	mul	x22, x22, x20
+(gdb) ni
+0x0000000000400698 in test ()
+1: x/i $pc
+=> 0x400698 <test+52>:	mov	x23, x22
+(gdb) ni
+0x000000000040069c in test ()
+1: x/i $pc
+=> 0x40069c <test+56>:	mul	x22, x21, x21
+(gdb) ni
+0x00000000004006a0 in test ()
+1: x/i $pc
+=> 0x4006a0 <test+60>:	mov	x20, #0x1b                  	// #27
+(gdb) ni
+0x00000000004006a4 in test ()
+1: x/i $pc
+=> 0x4006a4 <test+64>:	mul	x22, x22, x20
+(gdb) ni
+0x00000000004006a8 in test ()
+1: x/i $pc
+=> 0x4006a8 <test+68>:	add	x23, x23, x22
+(gdb) ni
+0x00000000004006ac in test ()
+1: x/i $pc
+=> 0x4006ac <test+72>:	mov	x20, #0xffffffffffffffe5    	// #-27
+(gdb) ni
+0x00000000004006b0 in test ()
+1: x/i $pc
+=> 0x4006b0 <test+76>:	mul	x22, x20, x21
+(gdb) ni
+0x00000000004006b4 in test ()
+1: x/i $pc
+=> 0x4006b4 <test+80>:	add	x23, x23, x22
+(gdb) ni
+0x00000000004006b8 in test ()
+1: x/i $pc
+=> 0x4006b8 <test+84>:	mov	x20, #0xffffffffffffffd5    	// #-43
+(gdb) ni
+0x00000000004006bc in test ()
+1: x/i $pc
+=> 0x4006bc <test+88>:	add	x23, x23, x20
+(gdb) ni
+0x00000000004006c0 in test ()
+1: x/i $pc
+=> 0x4006c0 <test+92>:	add	x1, x23, #0x0
+(gdb) ni
+0x00000000004006c4 in test ()
+1: x/i $pc
+=> 0x4006c4 <test+96>:	bl	0x400460 <printf@plt>
+(gdb) ni
+0x00000000004006c8 in test ()
+1: x/i $pc
+=> 0x4006c8 <test+100>:	cmp	x23, x24
+(gdb) ni
+0x00000000004006cc in test ()
+1: x/i $pc
+=> 0x4006cc <test+104>:	b.ge	0x4006e0 <else>
+(gdb) ni
+0x00000000004006d0 in test ()
+1: x/i $pc
+=> 0x4006d0 <test+108>:	adrp	x0, 0x400000
+(gdb) ni
+0x00000000004006d4 in test ()
+1: x/i $pc
+=> 0x4006d4 <test+112>:	add	x0, x0, #0x5c7
+(gdb) ni
+0x00000000004006d8 in test ()
+1: x/i $pc
+=> 0x4006d8 <test+116>:	mov	x24, x23
+(gdb) ni
+0x00000000004006dc in test ()
+1: x/i $pc
+=> 0x4006dc <test+120>:	mov	x1, x24
+(gdb) ni
+when x = -6, y = 11, current minimum = 11
+0x00000000004006c8 in test ()
+1: x/i $pc
+=> 0x4006c8 <test+100>:	cmp	x23, x24
+(gdb) c
+Continuing.
+when x = -5, y = 142, current minimum = 11
+when x = -4, y = 177, current minimum = 11
+when x = -3, y = 146, current minimum = 11
+when x = -2, y = 79, current minimum = 11
+when x = -1, y = 6, current minimum = 6
+when x = 0, y = -43, current minimum = -43
+when x = 1, y = -38, current minimum = -43
+when x = 2, y = 51, current minimum = -43
+when x = 3, y = 254, current minimum = -43
+when x = 4, y = 601, current minimum = -43
+when x = 5, y = 1122, current minimum = -43
+when x = 6, y = 1847, current minimum = -43
+********************************
+The minimum of the function = -43
+********************************
+[Inferior 1 (process 5137) exited normally]
+(gdb) q
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#1[benkun.chen@csa2 Assignment#1]$ exit
+exit
+
+Script done on Mon 03 Oct 2016 10:44:55 PM MDT

@@ -1,0 +1,93 @@
+# Bitwise Operations
+
+// 0 1 2 3 4 5 6 7 8 9  A  B  C  D  E  F
+//                     10 11 12 13 14 15
+
+## AND
+and
+
+x = 0x1B = 0001 1011
+y = 0xA3 = 1010 0011
+AND
+o = 0000 0011
+
+x = 0x7F = 0111 1111
+y = 0xEC = 1110 0110
+AND
+o = 0110 0110
+
+
+## OR
+orr
+
+x = 0x6E = 0110 1110
+y = 0x9B = 1001 1011
+OR
+o = 1111 1111
+
+x = 0x91 = 1001 0001
+y = 0xFA = 1111 1010
+OR
+o = 1111 1011
+
+
+## XOR
+eor (exclusive or)
+
+x = 0x8F = 1000 1111
+y = 0xC4 = 1100 0100
+XOR
+o = 0100 1011
+
+x = 0x2A = 0010 1010
+y = 0xBC = 1011 1100
+XOR
+o = 1001 0110
+
+
+## NOT
+mvn (move not)
+
+x = 0x53 = 0101 0011
+NOT
+o = 1010 1100
+
+x = 0xB5 = 1011 0101
+NOT
+o = 0100 1010
+
+
+# LOGICAL SHIFT LEFT
+lsl
+
+x = 0x23 = 0010 0011
+LEFT-SHIFT 1
+o = 0x46 = 0100 0110
+
+x = 0x4d = 0100 1101
+LEFT-SHIFT 6
+o = 1010 0000
+
+
+# LOGICAL SHIFT RIGHT
+lsr
+
+x = 0x95 = 1001 0101
+RIGHT-SHIFT 2
+o = 0010 0101
+
+x = 0x7E = 0111 1110
+RIGHT-SHIFT 3
+o = 0000 1111
+
+
+# ARITHMATIC SHIFT RIGHT
+asr
+
+x = 0x95 = 1001 0101
+ARITHMATIC RIGHT-SHIFT 2
+o = 1110 0101
+
+x = 0x7E = 0111 1110
+ARITHMATIC RIGHT-SHIFT 3
+o = 0000 1111

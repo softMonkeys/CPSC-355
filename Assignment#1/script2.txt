@@ -1,0 +1,5 @@
+Script started on Fri 07 Oct 2016 03:06:24 PM MDT
+]0;benkun.chen@pi-xx:~/Desktop/cpsc355/Assignment#1[benkun.chen@pi-xx Assignment#1]$ exit
+exit
+
+Script done on Fri 07 Oct 2016 03:06:27 PM MDT

@@ -1,0 +1,187 @@
+Script started on Wed 12 Oct 2016 05:57:56 PM MDT
+]0;benkun.chen@csa3:~/Desktop/cpsc355/Assignment#2[benkun.chen@csa3 Assignment#2]$ we[K[K./assign2c[3PcCodegcc assign2c.s -o assign2cm4 assign2c.m4 > assign2c.s[7Pgcc cCode.c -o cCodem4 assign2c.m4 > assign2c.s[1Pgcc assign2c.s -o assign2c./cCode[Kassign2c[3PcCodegcc assign2c.s -o assign2cm4 assign2c.m4 > assign2c.s[7Pgcc cCode.c -o cCode[10P./assign2b[3PcCodegcc assign2b.s -o assign2b[6PcCode.c -o cCodem4 assign2b.m4 > assign2b.s./cCode[Km4 assign2b.m4 > assign2b.s./cCode[Kgcc cCode.c -o cCode[13P./cCodeassign2agcc assign2a.s -o assign2am4 assign2a.m4 > assign2a.s
+]0;benkun.chen@csa3:~/Desktop/cpsc355/Assignment#2[benkun.chen@csa3 Assignment#2]$ m4 assign2a.m4 > assign2a.s[17P./assign2c[3PcCodegcc assign2c.s -o assign2cm4 assign2c.m4 > assign2c.s[1Pgcc assign2c.s -o assign2c[1P[1@a[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Ka
+]0;benkun.chen@csa3:~/Desktop/cpsc355/Assignment#2[benkun.chen@csa3 Assignment#2]$ gdb assign2a
+GNU gdb (GDB) Fedora 7.11.1-75.fc24
+Copyright (C) 2016 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.  Type "show copying"
+and "show warranty" for details.
+This GDB was configured as "aarch64-redhat-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<http://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+<http://www.gnu.org/software/gdb/documentation/>.
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from assign2a...(no debugging symbols found)...done.
+(gdb) display [K/[K /i[K[K[K/i $pc
+1: x/i $pc
+<error: No registers.>
+(gdb) b top
+Breakpoint 1 at 0x400680
+(gdb) we[K[Kr
+Starting program: /home/ugb/benkun.chen/Desktop/cpsc355/Assignment#2/assign2a 
+multiplier = 0x00000032 (50) multiplicand = 0xf0000000 (-268435456)
+
+
+Breakpoint 1, 0x0000000000400680 in top ()
+1: x/i $pc
+=> 0x400680 <top>:	ands	w26, w20, #0x1
+(gdb) p $we[K[Kwe[K[Kw22
+$1 = 0
+(gdb) p $w20
+$2 = 50
+(gdb) ni
+0x0000000000400684 in top ()
+1: x/i $pc
+=> 0x400684 <top+4>:	b.eq	0x40068c <continue>
+(gdb) ni
+0x000000000040068c in continue ()
+1: x/i $pc
+=> 0x40068c <continue>:	asr	w20, w20, #1
+(gdb) ni
+0x0000000000400690 in continue ()
+1: x/i $pc
+=> 0x400690 <continue+4>:	ands	w26, w22, #0x1
+(gdb) ni
+0x0000000000400694 in continue ()
+1: x/i $pc
+=> 0x400694 <continue+8>:	b.eq	0x4006a0 <continue1>
+(gdb) ni
+0x00000000004006a0 in continue1 ()
+1: x/i $pc
+=> 0x4006a0 <continue1>:	and	w20, w20, #0x7fffffff
+(gdb) ni
+0x00000000004006a4 in next ()
+1: x/i $pc
+=> 0x4006a4 <next>:	asr	w22, w22, #1
+(gdb) ni
+0x00000000004006a8 in next ()
+1: x/i $pc
+=> 0x4006a8 <next+4>:	add	w19, w19, #0x1
+(gdb) ni
+0x00000000004006ac in test ()
+1: x/i $pc
+=> 0x4006ac <test>:	cmp	w19, #0x20
+(gdb) ni
+0x00000000004006b0 in test ()
+1: x/i $pc
+=> 0x4006b0 <test+4>:	b.lt	0x400680 <top>
+(gdb) ni
+
+Breakpoint 1, 0x0000000000400680 in top ()
+1: x/i $pc
+=> 0x400680 <top>:	ands	w26, w20, #0x1
+(gdb) ni[Kni[Kp $w22
+$3 = 0
+(gdb) p $w22[K0
+$4 = 25
+(gdb) ni
+0x0000000000400684 in top ()
+1: x/i $pc
+=> 0x400684 <top+4>:	b.eq	0x40068c <continue>
+(gdb) ni
+0x0000000000400688 in top ()
+1: x/i $pc
+=> 0x400688 <top+8>:	add	w22, w22, w21
+(gdb) ni
+0x000000000040068c in continue ()
+1: x/i $pc
+=> 0x40068c <continue>:	asr	w20, w20, #1
+(gdb) ni
+0x0000000000400690 in continue ()
+1: x/i $pc
+=> 0x400690 <continue+4>:	ands	w26, w22, #0x1
+(gdb) ni
+0x0000000000400694 in continue ()
+1: x/i $pc
+=> 0x400694 <continue+8>:	b.eq	0x4006a0 <continue1>
+(gdb) ni
+0x00000000004006a0 in continue1 ()
+1: x/i $pc
+=> 0x4006a0 <continue1>:	and	w20, w20, #0x7fffffff
+(gdb) ni
+0x00000000004006a4 in next ()
+1: x/i $pc
+=> 0x4006a4 <next>:	asr	w22, w22, #1
+(gdb) ni
+0x00000000004006a8 in next ()
+1: x/i $pc
+=> 0x4006a8 <next+4>:	add	w19, w19, #0x1
+(gdb) ni
+0x00000000004006ac in test ()
+1: x/i $pc
+=> 0x4006ac <test>:	cmp	w19, #0x20
+(gdb) ni
+0x00000000004006b0 in test ()
+1: x/i $pc
+=> 0x4006b0 <test+4>:	b.lt	0x400680 <top>
+(gdb) ni
+
+Breakpoint 1, 0x0000000000400680 in top ()
+1: x/i $pc
+=> 0x400680 <top>:	ands	w26, w20, #0x1
+(gdb) p $<register[K[K[K[K[K[K[K[K[Kw22
+$5 = 4160749568
+(gdb) p $w22[K[K20
+$6 = 12
+(gdb) ni
+0x0000000000400684 in top ()
+1: x/i $pc
+=> 0x400684 <top+4>:	b.eq	0x40068c <continue>
+(gdb) ni
+0x000000000040068c in continue ()
+1: x/i $pc
+=> 0x40068c <continue>:	asr	w20, w20, #1
+(gdb) ni
+0x0000000000400690 in continue ()
+1: x/i $pc
+=> 0x400690 <continue+4>:	ands	w26, w22, #0x1
+(gdb) ni
+0x0000000000400694 in continue ()
+1: x/i $pc
+=> 0x400694 <continue+8>:	b.eq	0x4006a0 <continue1>
+(gdb) ni
+0x00000000004006a0 in continue1 ()
+1: x/i $pc
+=> 0x4006a0 <continue1>:	and	w20, w20, #0x7fffffff
+(gdb) ni
+0x00000000004006a4 in next ()
+1: x/i $pc
+=> 0x4006a4 <next>:	asr	w22, w22, #1
+(gdb) ni
+0x00000000004006a8 in next ()
+1: x/i $pc
+=> 0x4006a8 <next+4>:	add	w19, w19, #0x1
+(gdb) ni
+0x00000000004006ac in test ()
+1: x/i $pc
+=> 0x4006ac <test>:	cmp	w19, #0x20
+(gdb) ni
+0x00000000004006b0 in test ()
+1: x/i $pc
+=> 0x4006b0 <test+4>:	b.lt	0x400680 <top>
+(gdb) ni
+
+Breakpoint 1, 0x0000000000400680 in top ()
+1: x/i $pc
+=> 0x400680 <top>:	ands	w26, w20, #0x1
+(gdb) p $w22
+$7 = 4227858432
+(gdb) p $w22[K0
+$8 = 6
+(gdb) break[K[K[K[K[Kdelete breakpoints
+Delete all breakpoints? (y or n) y
+(gdb) c
+Continuing.
+product = 0xfffffffc multiplier = 0xe0000000 
+64_bit result = 0xfffffffce0000000 (-13421772800)
+[Inferior 1 (process 7450) exited normally]
+(gdb) q
+]0;benkun.chen@csa3:~/Desktop/cpsc355/Assignment#2[benkun.chen@csa3 Assignment#2]$ exit
+exit
+
+Script done on Wed 12 Oct 2016 06:02:02 PM MDT

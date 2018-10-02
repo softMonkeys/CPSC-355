@@ -1,0 +1,15 @@
+Script started on Thu 24 Nov 2016 12:15:40 PM MST
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ make./a5a[1Pmake./a5a[1Pmake./a5a[1Pmakecd Assignment#5[5Pcpsc355Desktopssh arm.cpsc.ucalgary.ca./a5a[Kssh arm.cpsc.ucalgary.ca[14Pcd Desktopcpsc355Desktopssh arm.cpsc.ucalgary.ca./a5a[K[1Pmake./a5a[1Pmake./a5assh arm.cpsc.ucalgary.ca[14Pcd Desktopcpsc355Assignment#5make[K./a5a[1Pmake./a5a[1Pmake./a5a[1Pmake[Km4 a5b.asm > a5b.s
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ gcc a5b.s -o ab[K5b
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ gcc a5b.s -o a5bm4 a5b.asm > a5b.sake[K./a5a[1Pmake./a5a[1Pmake./a5a[1Pmakecd Assignment#5[5Pcpsc355Desktopssh arm.cpsc.ucalgary.ca[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K./a5b [K 9 11 1990
+September 11th, 1990
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ ./a5b 9 11 1990[1@-[C[C[1@-
+invalid input
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ ./a5b -9 -11 1990[1P[C[1@9[C[C[C[1P[C[C1 1990
+invalid input
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ ./a5b 99 111 1990[K[K[K[K[K[K[K[K[K[K[K[K
+invalid input
+]0;benkun.chen@csa2:~/Desktop/cpsc355/Assignment#5[benkun.chen@csa2 Assignment#5]$ exit
+exit
+
+Script done on Thu 24 Nov 2016 12:16:44 PM MST
